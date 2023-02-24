@@ -1,0 +1,14 @@
+<h1>Create New</h1>
+
+<%= form_with model: @tasks do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+  <%= f.label :details %>
+  <%= f.text_field :details %>
+  <%= f.label :completed %>
+  <%= f.number_field :completed %>
+  <%= f.submit %>
+<% end %>
+
+
+<%= link_to "Return to Tasks", tasks_path %>
